@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <data>
+        <variable
+            name="clickHandler"
+            type="com.p.assignmentp.ui.home.HomeFragment.ClickHandler" />
+
+    </data>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/rounded_corner_full"
+    tools:context=".ui.home.HomeFragment">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_logo"/>
+
+
+    <TextView
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:background="@drawable/rounded_corner"
+        android:padding="10dp"
+        android:onClick="@{clickHandler::product}"
+        android:text="Products"
+        android:textAlignment="center"
+        android:textSize="35dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:onClick="@{clickHandler::category}"
+        android:background="@drawable/rounded_corner"
+        android:padding="10dp"
+        android:text="Category"
+        android:textAlignment="center"
+        android:textSize="35dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:onClick="@{clickHandler::logout}"
+        android:background="@drawable/rounded_corner"
+        android:padding="10dp"
+        android:text="Logout"
+        android:textAlignment="center"
+        android:textSize="35dp" />
+
+
+</LinearLayout>
+</layout>
